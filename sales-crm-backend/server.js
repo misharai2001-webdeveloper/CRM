@@ -25,10 +25,17 @@ const createDefaultAdmin = async () => {
 
 createDefaultAdmin();
 const app = express();
-app.use(cors({
-  origin: "http://localhost:3000",
-  credentials: true
-}))
+app.use(
+  cors({
+    origin: [
+      "http://localhost:3000",
+      "http://localhost:5173",
+      "https://crm-q3ca.onrender.com",
+      "https://vercel.app"
+    ],
+    credentials: true,
+  })
+);
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use("/api/upload", uploadRoutes);
@@ -37,6 +44,6 @@ app.use("/api/employees", employeeRoutes);
 app.use("/api/leads", leadRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/settings", settingsRoutes);
-
+app.set("trust proxy", 1);
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log("Server running"));
