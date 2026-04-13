@@ -1,0 +1,55 @@
+.modal-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,0.35);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:2000;
+}
+
+.modal{
+  width:420px;
+  background:#f3f4f6;
+  border-radius:14px;
+  padding:20px;
+}
+
+.modal-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:10px;
+}
+
+.close{
+  cursor:pointer;
+  font-size:18px;
+}
+
+.modal-body{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.modal-body label{
+  font-size:13px;
+  color:#374151;
+}
+
+.modal-body input{
+  padding:12px;
+  border-radius:10px;
+  border:1px solid #d1d5db;
+  outline:none;
+}
+
+.save-btn{
+  margin-top:10px;
+  background:#d1d5db;
+  border:none;
+  padding:12px;
+  border-radius:10px;
+  cursor:pointer;
+}

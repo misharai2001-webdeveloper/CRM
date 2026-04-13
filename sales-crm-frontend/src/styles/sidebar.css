@@ -1,0 +1,67 @@
+/* MAIN SIDEBAR */
+.sidebar {
+  width: 230px;
+  height: 100vh;
+  background: #f3f4f6;
+    
+  padding: 18px 14px;
+  box-sizing: border-box;
+}
+
+/* LOGO */
+.logo {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 18px;
+}
+
+.logo-blue {
+  color: #2563eb;
+  font-weight: 700;
+}
+
+/* DIVIDER LINE */
+.divider {
+  height: 1px;
+  background: #d1d5db;
+  margin-bottom: 18px;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* MENU LINKS */
+.menu a {
+  text-decoration: none;
+  color: #0c0c0c;
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+}
+
+/* ACTIVE LINK (Leads in screenshot) */
+.menu a.active {
+  background: #d1d5db;
+  font-weight: 500;
+  color: white;
+}
+
+/* HOVER */
+.menu a:hover {
+  background: #e5e7eb;
+
+}
+
+/* Mobile sidebar shadow */
+@media (max-width: 768px) {
+  .sidebar {
+    box-shadow: 4px 0 15px rgba(0,0,0,0.15);
+  }
+}

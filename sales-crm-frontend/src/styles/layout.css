@@ -1,0 +1,60 @@
+.layout {
+  display: flex;
+}
+
+/* page content */
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* sidebar wrapper for mobile animation */
+.sidebar-wrapper {
+  transition: 0.3s;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* hamburger */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 14px;
+  left: 18px;
+  font-size: 26px;
+  background: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.2);
+  z-index: 1200;
+  cursor: pointer;
+}
+
+/* 📱 MOBILE */
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  /* Push content down so logo doesn't overlap */
+  .content {
+    padding-top: 70px;
+  }
+
+  .sidebar-wrapper {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    z-index: 1000;
+    height: 100%;
+  }
+
+  .sidebar-wrapper.show {
+    left: 0;
+  }
+}

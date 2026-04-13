@@ -1,0 +1,51 @@
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  height: 60px;
+  background: white;
+  
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* search container */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #e5e7eb;
+  padding: 8px 14px;
+  border-radius: 20px;
+  width: 280px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  margin-left: 8px;
+  width: 100%;
+  font-size: 14px;
+}
+
+.search-icon {
+  font-size: 14px;
+}
+
+/* spacer so search stays centered when hamburger exists */
+.nav-left {
+  width: 40px;
+}
+
+/* 📱 MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+  .navbar {
+    padding-left: 70px;   /* space for hamburger */
+  }
+
+  .search-box {
+    width: 100%;          /* full width search */
+  }
+}
