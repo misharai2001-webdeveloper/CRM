@@ -51,7 +51,7 @@
   position:fixed;
   bottom:0;
   right:0;
-  left:250px; /* keeps space for sidebar */
+  left:250px; 
   background:#fff;
   padding:16px 30px;
   border-top:1px solid #eee;
@@ -63,7 +63,7 @@
   color: green;
 }
 
-/* 📱 Mobile */
+
 @media (max-width: 768px) {
   .settings-grid {
     grid-template-columns: 1fr;

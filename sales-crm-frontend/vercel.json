@@ -1,11 +1,7 @@
 {
-  "build": {
-    "env": {
-      "NODE_VERSION": "16"
-    }
-  },
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/" }
+  "buildCommand": "npm run build",
+  "outputDirectory": "build",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
