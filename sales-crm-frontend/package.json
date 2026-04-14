@@ -21,9 +21,9 @@
   },
   "scripts": {
     "start": "craco start",
-  "build": "craco build",
-  "test": "craco test",
-  "eject": "react-scripts eject"
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -45,10 +45,6 @@
   },
   "devDependencies": {
     "source-map-explorer": "^2.5.3"
-  },
-  "resolutions": {
-    "postcss": "8.4.31",
-    "postcss-safe-parser": "6.0.0",
-    "cssnano": "5.1.15"
   }
+ 
 }
